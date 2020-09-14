@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserCell" rowHeight="128" id="KGk-i7-Jjw" customClass="UserTableViewCell" customModule="ShaadiAssignment" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="357" height="128"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="357" height="128"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ztd-a0-IbI">
+                        <rect key="frame" x="10" y="10" width="337" height="26"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DnO-2f-Nap">
+                        <rect key="frame" x="10" y="46" width="337" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I5v-Ic-GTG">
+                        <rect key="frame" x="10" y="74" width="337" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K5S-uj-PyR">
+                        <rect key="frame" x="10" y="100" width="337" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="K5S-uj-PyR" secondAttribute="bottom" constant="10" id="198-wJ-TDt"/>
+                    <constraint firstItem="DnO-2f-Nap" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="39O-Gb-gzc"/>
+                    <constraint firstAttribute="trailing" secondItem="ztd-a0-IbI" secondAttribute="trailing" constant="10" id="7Bz-r0-iFW"/>
+                    <constraint firstItem="DnO-2f-Nap" firstAttribute="top" secondItem="ztd-a0-IbI" secondAttribute="bottom" constant="10" id="9On-EA-dLV"/>
+                    <constraint firstAttribute="trailing" secondItem="K5S-uj-PyR" secondAttribute="trailing" constant="10" id="Cok-8B-M7g"/>
+                    <constraint firstAttribute="trailing" secondItem="DnO-2f-Nap" secondAttribute="trailing" constant="10" id="F51-sc-O46"/>
+                    <constraint firstItem="K5S-uj-PyR" firstAttribute="top" secondItem="I5v-Ic-GTG" secondAttribute="bottom" constant="8" id="LnL-jx-Nio"/>
+                    <constraint firstAttribute="trailing" secondItem="I5v-Ic-GTG" secondAttribute="trailing" constant="10" id="RCF-GF-9Eu"/>
+                    <constraint firstItem="I5v-Ic-GTG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Rmm-MG-GdN"/>
+                    <constraint firstItem="ztd-a0-IbI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="eDu-vy-w3A"/>
+                    <constraint firstItem="K5S-uj-PyR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="iTg-uR-bhz"/>
+                    <constraint firstItem="ztd-a0-IbI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="ite-qr-NGs"/>
+                    <constraint firstItem="I5v-Ic-GTG" firstAttribute="top" secondItem="DnO-2f-Nap" secondAttribute="bottom" constant="10" id="j22-U0-2Sx"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="labelEmail" destination="DnO-2f-Nap" id="W8o-lD-xH4"/>
+                <outlet property="labelName" destination="ztd-a0-IbI" id="JoA-a1-io2"/>
+                <outlet property="labelPhone" destination="I5v-Ic-GTG" id="0g3-IY-8qA"/>
+                <outlet property="labelWebsite" destination="K5S-uj-PyR" id="uir-Qd-eAh"/>
+            </connections>
+            <point key="canvasLocation" x="21.014492753623191" y="112.5"/>
+        </tableViewCell>
+    </objects>
+</document>

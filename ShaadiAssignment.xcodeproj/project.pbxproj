@@ -14,6 +14,12 @@
 		9190FED6250B4158001D9296 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9190FED5250B4158001D9296 /* Assets.xcassets */; };
 		9190FED9250B4158001D9296 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9190FED7250B4158001D9296 /* LaunchScreen.storyboard */; };
 		9190FEE4250B4158001D9296 /* ShaadiAssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9190FEE3250B4158001D9296 /* ShaadiAssignmentTests.swift */; };
+		9190FEF4250B617D001D9296 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9190FEF3250B617D001D9296 /* UserModel.swift */; };
+		9190FEF6250B6233001D9296 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9190FEF5250B6233001D9296 /* UserViewModel.swift */; };
+		9190FEFB250C99F3001D9296 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9190FEF9250C99F3001D9296 /* UserTableViewCell.swift */; };
+		9190FEFC250C99F3001D9296 /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9190FEFA250C99F3001D9296 /* UserTableViewCell.xib */; };
+		9190FEFE250CB004001D9296 /* DetailedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9190FEFD250CB004001D9296 /* DetailedViewController.swift */; };
+		9190FF00250F3111001D9296 /* ShaadiAssignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9190FEFF250F3111001D9296 /* ShaadiAssignment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +44,12 @@
 		9190FEDF250B4158001D9296 /* ShaadiAssignmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShaadiAssignmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9190FEE3250B4158001D9296 /* ShaadiAssignmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShaadiAssignmentTests.swift; sourceTree = "<group>"; };
 		9190FEE5250B4158001D9296 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9190FEF3250B617D001D9296 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		9190FEF5250B6233001D9296 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		9190FEF9250C99F3001D9296 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		9190FEFA250C99F3001D9296 /* UserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
+		9190FEFD250CB004001D9296 /* DetailedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedViewController.swift; sourceTree = "<group>"; };
+		9190FEFF250F3111001D9296 /* ShaadiAssignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShaadiAssignment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,12 +91,15 @@
 		9190FECB250B4156001D9296 /* ShaadiAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				9190FF01250F311D001D9296 /* UnitTest */,
+				9190FEF2250B6140001D9296 /* View */,
+				9190FEF1250B6139001D9296 /* Controller */,
+				9190FEF0250B6130001D9296 /* ViewModel */,
+				9190FEEF250B41B3001D9296 /* Model */,
+				9190FEEE250B4171001D9296 /* Resources */,
 				9190FECC250B4156001D9296 /* AppDelegate.swift */,
 				9190FECE250B4156001D9296 /* SceneDelegate.swift */,
-				9190FED0250B4156001D9296 /* ViewController.swift */,
-				9190FED2250B4156001D9296 /* Main.storyboard */,
 				9190FED5250B4158001D9296 /* Assets.xcassets */,
-				9190FED7250B4158001D9296 /* LaunchScreen.storyboard */,
 				9190FEDA250B4158001D9296 /* Info.plist */,
 			);
 			path = ShaadiAssignment;
@@ -97,6 +112,57 @@
 				9190FEE5250B4158001D9296 /* Info.plist */,
 			);
 			path = ShaadiAssignmentTests;
+			sourceTree = "<group>";
+		};
+		9190FEEE250B4171001D9296 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9190FEEF250B41B3001D9296 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9190FEF3250B617D001D9296 /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9190FEF0250B6130001D9296 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				9190FEF5250B6233001D9296 /* UserViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9190FEF1250B6139001D9296 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9190FED0250B4156001D9296 /* ViewController.swift */,
+				9190FEFD250CB004001D9296 /* DetailedViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9190FEF2250B6140001D9296 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9190FED7250B4158001D9296 /* LaunchScreen.storyboard */,
+				9190FED2250B4156001D9296 /* Main.storyboard */,
+				9190FEF9250C99F3001D9296 /* UserTableViewCell.swift */,
+				9190FEFA250C99F3001D9296 /* UserTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9190FF01250F311D001D9296 /* UnitTest */ = {
+			isa = PBXGroup;
+			children = (
+				9190FEFF250F3111001D9296 /* ShaadiAssignment.swift */,
+			);
+			path = UnitTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +246,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9190FEFC250C99F3001D9296 /* UserTableViewCell.xib in Resources */,
 				9190FED9250B4158001D9296 /* LaunchScreen.storyboard in Resources */,
 				9190FED6250B4158001D9296 /* Assets.xcassets in Resources */,
 				9190FED4250B4156001D9296 /* Main.storyboard in Resources */,
@@ -200,8 +267,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9190FEFE250CB004001D9296 /* DetailedViewController.swift in Sources */,
 				9190FED1250B4156001D9296 /* ViewController.swift in Sources */,
 				9190FECD250B4156001D9296 /* AppDelegate.swift in Sources */,
+				9190FEF4250B617D001D9296 /* UserModel.swift in Sources */,
+				9190FEF6250B6233001D9296 /* UserViewModel.swift in Sources */,
+				9190FEFB250C99F3001D9296 /* UserTableViewCell.swift in Sources */,
 				9190FECF250B4156001D9296 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -210,6 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9190FF00250F3111001D9296 /* ShaadiAssignment.swift in Sources */,
 				9190FEE4250B4158001D9296 /* ShaadiAssignmentTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,7 +366,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -348,7 +420,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -372,7 +444,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.theappmaker.ShaadiAssignment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -390,7 +462,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.theappmaker.ShaadiAssignment;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

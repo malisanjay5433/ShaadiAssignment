@@ -15,7 +15,9 @@ class ViewController: UIViewController{
         super.viewDidLoad()
         self.title = "Users"
         viewModelUser.vc = self
-        viewModelUser.getAllUser()
+        viewModelUser.getAllUser { (userviewModel) in
+            print(userviewModel)
+        }
         tableView.register(UINib(nibName: "UserTableViewCell", bundle: nil), forCellReuseIdentifier: "UserCell")
     }
 }

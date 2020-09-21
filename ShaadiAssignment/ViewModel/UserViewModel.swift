@@ -11,7 +11,7 @@ import UIKit
 class UserViewModel{
     var allUsers = [UserModel]()
     weak var vc : ViewController?
-    func getAllUser(){
+    func getAllUser(_ completion: @escaping ([UserModel]) -> ()) {
         URLSession.shared.dataTask(with:URL(string:"https://jsonplaceholder.typicode.com/users")!) { (data,response,error) in
             if error == nil{
                 if let data = data{
@@ -19,15 +19,18 @@ class UserViewModel{
                         let response = try JSONDecoder().decode([UserModel].self, from:data)
                         print(response);
                         self.allUsers.append(contentsOf:response)
+                        completion(response)
                         DispatchQueue.main.async {
                             self.vc?.tableView.reloadData()
-                        }                    }catch let error{
+                        }
+                    }catch let error{
                         print(error.localizedDescription)
                     }
                 }
             }else{
                 print(error?.localizedDescription)
             }
-        }.resume()
+        }
+        .resume()
     }
 }
